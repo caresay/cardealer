@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title data-es="Inventario de Autos - Caresay" data-en="Car Inventory - Caresay">Inventario de Autos - Caresay</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-lang="es">
+    <div class="language-toggle">
+        <button id="languageToggle">
+            <span class="es-lang">🇪🇸 ES</span>
+            <span class="en-lang">🇺🇸 EN</span>
+        </button>
+    </div>
+
+    <div class="container">
+        <div class="back-to-home">
+            <a href="index.html" class="btn btn-primary" data-es="Volver a Inicio" data-en="Back to Home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 18l-6-6 6-6"/>
+                </svg>
+                <span class="text">Volver a Inicio</span>
+            </a>
+        </div>
+
+        <h1 data-es="Inventario de Autos Caresay" data-en="Caresay Car Inventory">Inventario de Autos Caresay</h1>
+        
+        <div class="car-stats">
+            <p id="totalCars" class="car-count" data-en="Total Cars: 0"> </p>
+            <p id="brandCounts" class="brand-count"></p>
+        </div>
+
+        <div class="search-section">
+            <input type="text" id="searchInput" placeholder="Buscar auto..." data-es="Buscar auto..." data-en="Search car...">
+            <label for="filterMarca" data-es="Marca" data-en="Brand">Marca:</label>
+            <select id="filterMarca">
+                <option value="" data-es="Todas las Marcas" data-en="All Brands">Todas las Marcas</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Ford">Ford</option>
+                <option value="RAM">RAM</option>
+                <option value="Nissan">Nissan</option>
+                <option value="GMC">GMC</option>
+                <option value="Honda">Honda</option>
+                <option value="Hyundai">Hyundai</option>
+            </select>
+            <label for="filterTipo" data-es="Tipo" data-en="Type">Tipo:</label>
+            <select id="filterTipo">
+                <option value="" data-es="Todos los Tipos" data-en="All Types">Todos los Tipos</option>
+                <option value="Trucks">Trucks</option>
+                <option value="Sedan">Sedan</option>
+                <option value="SUV">SUV</option>
+                <option value="Sport Car">Sport Car</option>
+            </select>
+        </div>
+
+        <div id="carInventory" class="car-grid">
+            <!-- Los autos se cargarán dinámicamente con JavaScript -->
+        </div>
+    </div>
+
+    <!-- Car Details Modal -->
+    <div id="carModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="carDetails"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

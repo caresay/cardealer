@@ -1,0 +1,89 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caresay - Conduce tu sueño hoy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="landing-page" data-lang="es">
+    <div class="language-toggle">
+        <button id="languageToggle">
+            <span class="es-lang">🇪🇸 ES</span>
+            <span class="en-lang">🇺🇸 EN</span>
+        </button>
+    </div>
+
+    <div class="landing-container">
+        <header class="landing-header">
+            <h1 data-es="Caresay" data-en="Caresay">Caresay</h1>
+            <p data-es="Conduce tu sueño hoy" data-en="Drive your dream today">Conduce tu sueño hoy</p>
+        </header>
+
+        <main class="landing-main">
+            <section class="hero">
+                <div class="hero-content">
+                    <h2 data-es="Encuentra tu próximo vehículo" data-en="Find Your Next Vehicle">Encuentra tu próximo vehículo</h2>
+                    <p data-es="Explora nuestra amplia selección de autos de alta calidad" data-en="Explore our wide selection of high-quality cars">Explora nuestra amplia selección de autos de alta calidad</p>
+                    <div class="hero-actions">
+                        <a href="catalogo.html" class="btn btn-primary" data-es="Ver Catálogo" data-en="View Catalog">Ver Catálogo</a>
+                        <button class="btn btn-contact" id="contactBtn" data-es="Contáctanos" data-en="Contact Us">Contáctanos</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features">
+                <div class="feature">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                    <h3 data-es="Gran Variedad" data-en="Wide Variety">Gran Variedad</h3>
+                    <p data-es="Más de 100 modelos diferentes" data-en="More than 100 different models">Más de 100 modelos diferentes</p>
+                </div>
+                <div class="feature">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 2H5a2 2 0 00-2 2v14a2 2 0 002 2h4l3 3 3-3h4a2 2 0 002-2V4a2 2 0 00-2-2zm-7 16h-2v-2h2v2zm0-4h-2V6h2v8z"/>
+                    </svg>
+                    <h3 data-es="Garantía" data-en="Warranty">Garantía</h3>
+                    <p data-es="Certificación de calidad" data-en="Quality Certification">Certificación de calidad</p>
+                </div>
+                <div class="feature">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                    </svg>
+                    <h3 data-es="Soporte 24/7" data-en="24/7 Support">Soporte 24/7</h3>
+                    <p data-es="Ayuda cuando la necesites" data-en="Help when you need it">Ayuda cuando la necesites</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="landing-footer">
+            <p data-es=" 2023 Caresay. Todos los derechos reservados." data-en=" 2023 Caresay. All rights reserved."> 2023 Caresay. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content contact-modal">
+            <span class="close">&times;</span>
+            <h2 data-es="Información de Contacto" data-en="Contact Information">Información de Contacto</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    <a href="https://wa.me/12523738059" target="_blank">WhatsApp: +1 252-373-8059</a>
+                </div>
+                <div class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <a href="mailto:careasycontactsales@gmail.com">careasycontactsales@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
